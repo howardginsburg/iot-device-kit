@@ -1,0 +1,33 @@
+[
+  {
+    "@id": "dtmi:iotc:feather;1",
+    "@type": "Interface",
+    "contents": [
+      {
+        "@id": "dtmi:iotc:feather:DisableAlarm;1",
+        "@type": "Command",
+        "commandType": "synchronous",
+        "displayName": {
+          "en": "Disable Alarm"
+        },
+        "name": "DisableAlarm"
+      },
+      {
+        "@id": "dtmi:iotc:feather:LidState;1",
+        "@type": "Telemetry",
+        "displayName": {
+          "en": "Lid State"
+        },
+        "name": "LidState",
+        "schema": "string"
+      }
+    ],
+    "displayName": {
+      "en": "Feather"
+    },
+    "@context": [
+      "dtmi:iotcentral:context;2",
+      "dtmi:dtdl:context;2"
+    ]
+  }
+]

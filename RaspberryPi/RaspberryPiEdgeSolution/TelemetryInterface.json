@@ -1,0 +1,126 @@
+{
+    "@id": "dtmi:rubegoldberg:SenseHatModule;1",
+    "@type": "Interface",
+    "contents": [
+        {
+            "@id": "dtmi:rubegoldberg:SenseHatModule:joystickState;1",
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "Joystick State"
+            },
+            "name": "joystickState",
+            "schema": "string"
+        },
+        {
+            "@id": "dtmi:rubegoldberg:SenseHatModule:temperature;1",
+            "@type": [
+                "Telemetry",
+                "Temperature"
+            ],
+            "displayName": {
+                "en": "Temperature"
+            },
+            "name": "temperature",
+            "schema": "double",
+            "unit": "degreeCelsius"
+        },
+        {
+            "@id": "dtmi:rubegoldberg:SenseHatModule:pressure;1",
+            "@type": [
+                "Telemetry",
+                "Pressure"
+            ],
+            "displayName": {
+                "en": "Pressure"
+            },
+            "name": "pressure",
+            "schema": "double",
+            "unit": "kilopascal"
+        },
+        {
+            "@id": "dtmi:rubegoldberg:SenseHatModule:humidity;1",
+            "@type": [
+                "Telemetry",
+                "Humidity"
+            ],
+            "displayName": {
+                "en": "Humidity"
+            },
+            "name": "humidity",
+            "schema": "double",
+            "unit": "percent"
+        },
+        {
+            "@id": "dtmi:rubegoldberg:SenseHatModule:heatIndex;1",
+            "@type": [
+                "Telemetry",
+                "Temperature"
+            ],
+            "displayName": {
+                "en": "Heat Index"
+            },
+            "name": "heatIndex",
+            "schema": "double",
+            "unit": "degreeCelsius"
+        },
+        {
+            "@id": "dtmi:rubegoldberg:SenseHatModule:dewPoint;1",
+            "@type": [
+                "Telemetry",
+                "Temperature"
+            ],
+            "displayName": {
+                "en": "DewPoint"
+            },
+            "name": "dewPoint",
+            "schema": "double",
+            "unit": "degreeCelsius"
+        },
+        {
+            "@id": "dtmi:rubegoldberg:SenseHatModule:magneticInduction;1",
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "Magnetic Induction"
+            },
+            "name": "magneticInduction",
+            "schema": "vector"
+        },
+        {
+            "@id": "dtmi:rubegoldberg:SenseHatModule:acceleration;1",
+            "@type": [
+                "Telemetry",
+                "AccelerationVector"
+            ],
+            "displayName": {
+                "en": "Acceleration"
+            },
+            "name": "acceleration",
+            "schema": "vector"
+        },
+        {
+            "@id": "dtmi:rubegoldberg:SenseHatModule:altitude;1",
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "Altitude"
+            },
+            "name": "altitude",
+            "schema": "double"
+        },
+        {
+            "@id": "dtmi:rubegoldberg:SenseHatModule:angularRate;1",
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "Angular Rate"
+            },
+            "name": "angularRate",
+            "schema": "vector"
+        }
+    ],
+    "displayName": {
+        "en": "SenseHatModule"
+    },
+    "@context": [
+        "dtmi:iotcentral:context;2",
+        "dtmi:dtdl:context;2"
+    ]
+}

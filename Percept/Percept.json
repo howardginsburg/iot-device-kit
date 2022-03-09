@@ -1,0 +1,24 @@
+[
+  {
+    "@id": "dtmi:iotc:Percept_1om;1",
+    "@type": "Interface",
+    "contents": [
+      {
+        "@id": "dtmi:iotc:Percept_1om:PeopleCount;1",
+        "@type": "Telemetry",
+        "displayName": {
+          "en": "People Count"
+        },
+        "name": "PeopleCount",
+        "schema": "integer"
+      }
+    ],
+    "displayName": {
+      "en": "Percept"
+    },
+    "@context": [
+      "dtmi:iotcentral:context;2",
+      "dtmi:dtdl:context;2"
+    ]
+  }
+]
