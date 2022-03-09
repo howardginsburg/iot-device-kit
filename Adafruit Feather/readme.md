@@ -5,10 +5,10 @@
 This demo shows off how to use a simple ESP32 board to explore the .Net Nanoframework.
 
 - [Adafruit ESP32 Feather](https://www.adafruit.com/product/3591)
-    - [Pinout Diagram](https://learn.adafruit.com/adafruit-huzzah32-esp32-feather/pinouts)
+  - [Pinout Diagram](https://learn.adafruit.com/adafruit-huzzah32-esp32-feather/pinouts)
 - [Elegoo 37 Piece Sensor Kit](https://www.elegoo.com/products/elegoo-37-in-1-sensor-kit)
-- Learn more about the .Net Nanoframework at https://www.nanoframework.net/.
-    - To get this sample running, I used Visual Studio 2022 and followed the [Getting Started](https://www.nanoframework.net/) instructions for getting the Nanoframework setup and the device flashed with the firmware.  After that, it was pretty straight forward.
+- Learn more about the [.Net Nanoframework](https://www.nanoframework.net/).
+  - To get this sample running, I used Visual Studio 2022 and followed the [Getting Started](https://www.nanoframework.net/) instructions for getting the Nanoframework setup and the device flashed with the firmware.  After that, it was pretty straight forward.
 
 ## Deployment
 
