@@ -39,7 +39,7 @@ Azure Sphere
 Azure IoT Edge
 .Net 6
 
-## Azure Percept DK
+## [Azure Percept DK](/Percept/readme.md)
 
 Azure IoT Edge
 Vision on Edge
