@@ -14,7 +14,12 @@ This demo shows off how to use a simple ESP32 board to explore the .Net Nanofram
 
 ### Construction
 
-TODO: Insert Fritzing Diagram
+![Fritzing Diagram](../images/Feather%20ESP32_bb.png)
+
+1. Feather ESP32
+2. Tilt sensor
+3. RGB LED
+4. Piezo speaker
 
 ### Deploying to IoT Central
 
@@ -26,7 +31,7 @@ TODO: Insert Fritzing Diagram
 
 1. Wire up the board and sensors according the the fritzing diagram.
 2. Follow the instructions for getting the Feather running the nanoframework and recognized in Visual Studio.
-3. Open the RubeGoldbergNano.sln file in Visual Studio 2022.
+3. Open the AdaFruitFeather.sln file in Visual Studio 2022.
 4. Select your board in the Device Explorer view.  You may have to enable the view in Visual Studio to see it.
 5. Edit Configuration.cs and replace DPS_REGISTRATION_ID, DPS_ADDRESS, DPS_SCOPE, and DPS_SAS_KEY with the connection information from IoT Central.
 6. Change the configuration from Debug to Release, and compile/deploy the code to the board.
