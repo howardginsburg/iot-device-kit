@@ -51,7 +51,7 @@ Source for the docker containers and instructions on how to build your own are o
 1. Launch the docker container.
     - `sudo docker run -it --device /dev/dri:/dev/dri --user 0 --device-cgroup-rule='c 189:* rmw' -v /dev/bus/usb:/dev/bus/usb -v /openvino_env:/openvino_env --rm openvino/ubuntu20_dev:latest`
     - Notes:
-        - Workspace
+        - Workspace for persisting models and other data.
             - -v /openvino_env:/openvino_env
         - GPU - allow access to the GPU and run as root.
             - --device /dev/dri:/dev/dri --user 0
