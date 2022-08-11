@@ -40,7 +40,7 @@ Running the latest version of OpenVINO with a VPU created challenges, and since 
 
 Source for the docker containers and instructions on how to build your own are on [GitHub](https://github.com/openvinotoolkit/docker_ci).  Pre-built images can be found on [DockerHub](https://hub.docker.com/r/openvino/ubuntu20_dev)
 
-Install the Microsoft [Moby](https://docs.microsoft.com/en-us/azure/iot-edge/how-to-provision-single-device-linux-symmetric?view=iotedge-2020-11&tabs=azure-portal%2Cubuntu#install-iot-edge) container engine.
+1. Install the Microsoft [Moby](https://docs.microsoft.com/en-us/azure/iot-edge/how-to-provision-single-device-linux-symmetric?view=iotedge-2020-11&tabs=azure-portal%2Cubuntu#install-iot-edge) container engine.
     - `wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb`
     - `sudo dpkg -i packages-microsoft-prod.deb`
     - `rm packages-microsoft-prod.deb`
@@ -48,6 +48,7 @@ Install the Microsoft [Moby](https://docs.microsoft.com/en-us/azure/iot-edge/how
 
 ### Run the Ubuntu 20 container
 
+1. Launch the docker container.
     - `sudo docker run -it --device /dev/dri:/dev/dri --user 0 --device-cgroup-rule='c 189:* rmw' -v /dev/bus/usb:/dev/bus/usb -v /openvino_env:/openvino_env --rm openvino/ubuntu20_dev:latest`
     - Notes:
         - Workspace
