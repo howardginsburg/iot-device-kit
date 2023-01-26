@@ -14,22 +14,11 @@ This Iot Edge Solution leverages a Sense Hat on a Raspberry Pi to send data to I
 
 ## Deployment
 
+Note: make sure to enable I2C on your Raspberry Pi so that the SenseHat can be accessed in general and thus from the privileged docker container.
+
 ### IoT Edge install on Raspberry Pi Bullseye
 
-Follow the [documentation/tutorials](https://docs.microsoft.com/azure/iot-edge/how-to-provision-single-device-linux-symmetric?view=iotedge-2020-11&tabs=azure-portal) on how to deploy to a Raspberry Pi.  
-
-At the time of this writing, there is an outstanding [issue](https://github.com/Azure/iotedge/issues/5812) with running IoT Edge 1.2 on the Raspberry Pi Bullseye OS.  To fix it, you must take the following steps:
-
-- sudo apt install cgroupfs-mount -y
-- sudo iotedge system stop
-- sudo docker rm -f edgeAgent
-- sudo systemctl stop docker
-- sudo cgroupfs-mount
-- sudo systemctl restart docker
-- sudo rm -rf /var/run/iotedge/mgmt.sock
-- sudo rm -rf /var/run/iotedge/workload.sock
-- sudo iotedge system restart
-- Edit /boot/cmdline.txt and add **cgroup_enable=1 cgroup_enable=memory cgroup_memory=1** to the end of the file.
+Follow the [documentation/tutorials](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-provision-single-device-linux-symmetric?view=iotedge-1.4&tabs=azure-portal%2Cdebian) on how to deploy to a Raspberry Pi.  
 
 ### Deploying to IoT Central
 
