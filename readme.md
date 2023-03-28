@@ -26,7 +26,8 @@ Embedded C SDK
 
 ## [Espressif ESP32 Azure IoT Dev Kit](/ESP32IoTDevKit/readme.md)
 
-Free RTOS with Azure IoT Middleware
+ESP32 exploration with Arduino
+Azure IoT Middleware for FreeRTOS with Espressif IoT Development Framework (IDF)
 
 ## [Azure IoT MXChip Dev Kit](/mxchip/readme.md)
 
