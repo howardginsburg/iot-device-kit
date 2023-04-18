@@ -1,0 +1,115 @@
+{
+    "packages": [
+      {
+        "name": "AZ3166",
+        "maintainer": "Microsoft Developer",
+        "websiteURL": "https://microsoft.github.io/azure-iot-developer-kit/",
+        "email": "aziotdevkit@microsoft.com",
+        "help": {
+          "online": "https://microsoft.github.io/azure-iot-developer-kit/"
+        },
+        "platforms": [
+        {
+            "name":  "MXChip - Microsoft Azure IoT Developer Kit",
+            "architecture":  "stm32f4",
+            "version":  "2.0.0",
+            "category":  "Contributed",
+            "help":  {
+                         "online":  "https://github.com/Microsoft/azure-iot-developer-kit"
+                     },
+            "url":  "https://github.com/microsoft/devkit-sdk/releases/download/2.0.0/AZ3166-2.0.0.zip",
+            "archiveFileName":  "AZ3166-2.0.0.zip",
+            "checksum":  "MD5:4f51c0ebf4d510f28c06d203a4ce23f8",
+            "size":  "6348700",
+            "boards":  [
+                           {
+                               "name":  "MXChip - Microsoft Azure IoT Developer Kit AZ3166"
+                           }
+                       ],
+            "toolsDependencies":  [
+                                      {
+                                          "packager":  "AZ3166",
+                                          "name":  "arm-none-eabi-gcc",
+                                          "version":  "5_4-2016q3"
+                                      },
+                                      {
+                                          "packager":  "AZ3166",
+                                          "name":  "openocd",
+                                          "version":  "0.10.0"
+                                      }
+                                  ]
+        }      
+        ],
+        "tools": [
+          {
+            "name": "arm-none-eabi-gcc",
+            "version": "5_4-2016q3",
+            "systems": [
+              {
+                "host": "i686-mingw32",
+                "archiveFileName": "gcc-arm-none-eabi-5_4-2016q3-20160926-win32.zip",
+                "url": "https://github.com/VSChina/azureiotdevkit_tools/releases/download/1.0/gcc-arm-none-eabi-5_4-2016q3-20160926-win32.zip",
+                "checksum": "MD5:0x1A5C77148193FFE53A698386CD1BBFE1",
+                "size": "121781693"
+              },
+              {
+                "host": "x86_64-apple-darwin",
+                "url": "https://github.com/VSChina/azureiotdevkit_tools/releases/download/1.0/gcc-arm-none-eabi-5_4-2016q3.tar.gz",
+                "archiveFileName": "gcc-arm-none-eabi-5_4-2016q3.tar.gz",
+                "checksum": "MD5:0xA8B80C2805B339EF5A219AF4573582D3",
+                "size": "109135672"
+              },
+              {
+                "host": "x86_64-pc-linux-gnu",
+                "url": "https://github.com/VSChina/azureiotdevkit_tools/releases/download/1.0/gcc-arm-none-eabi-6-2017-q1-linux64.tar.gz",
+                "archiveFileName": "gcc-arm-none-eabi-6-2017-q1-linux64.tar.gz",
+                "checksum": "MD5:0x4B5749E0248889B9A3B00852C1837A92",
+                "size": "112772785"
+              },
+              {
+                "host": "i686-pc-linux-gnu",
+                "url": "https://github.com/VSChina/azureiotdevkit_tools/releases/download/1.0/gcc-arm-none-eabi-5_4-2016q3-linux32.tar.gz",
+                "archiveFileName": "gcc-arm-none-eabi-5_4-2016q3-linux32.tar.gz",
+                "checksum": "MD5:0xE54D81242669409234909154169AD3F9",
+                "size": "106442419"
+              }
+            ]
+          },
+          {
+            "name": "openocd",
+            "version": "0.10.0",
+            "systems": [
+              {
+                "host": "i686-linux-gnu",
+                "url": "https://github.com/VSChina/azureiotdevkit_tools/releases/download/1.0/openocd-linux32-0.10.0.tar",
+                "archiveFileName": "openocd-linux32-0.10.0.tar",
+                "checksum": "MD5:0xC91BE51AE5D63091B1CC23B557E16535",
+                "size": "27729920"
+              },
+              {
+                "host": "x86_64-pc-linux-gnu",
+                "url": "https://github.com/VSChina/azureiotdevkit_tools/releases/download/1.0/openocd-linux64-0.10.0.tar",
+                "archiveFileName": "openocd-linux64-0.10.0.tar",
+                "checksum": "MD5:0xC91BE51AE5D63091B1CC23B557E16535",
+                "size": "27729920"
+              },
+              {
+                "host": "i686-mingw32",
+                "url": "https://github.com/VSChina/azureiotdevkit_tools/releases/download/1.0/openocd-0.10.0-32.zip",
+                "archiveFileName": "openocd-0.10.0-32.zip",
+                "checksum": "MD5:0x83E1ED6C7D7558F09C1E39F9C168126C",
+                "size": "2751074"
+              },
+              {
+                "host": "i386-apple-darwin11",
+                "url": "https://github.com/VSChina/azureiotdevkit_tools/releases/download/1.0/openocd-0.10.0.tar.gz",
+                "archiveFileName": "openocd-0.10.0.tar.gz",
+                "checksum": "MD5:0x8971D16AEE5C2642B33EE55FC6C86239",
+                "size": "6124274"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
