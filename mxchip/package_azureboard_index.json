@@ -49,28 +49,28 @@
                 "host": "i686-mingw32",
                 "archiveFileName": "gcc-arm-none-eabi-5_4-2016q3-20160926-win32.zip",
                 "url": "https://github.com/VSChina/azureiotdevkit_tools/releases/download/1.0/gcc-arm-none-eabi-5_4-2016q3-20160926-win32.zip",
-                "checksum": "MD5:0x1A5C77148193FFE53A698386CD1BBFE1",
+                "checksum": "MD5:1A5C77148193FFE53A698386CD1BBFE1",
                 "size": "121781693"
               },
               {
                 "host": "x86_64-apple-darwin",
                 "url": "https://github.com/VSChina/azureiotdevkit_tools/releases/download/1.0/gcc-arm-none-eabi-5_4-2016q3.tar.gz",
                 "archiveFileName": "gcc-arm-none-eabi-5_4-2016q3.tar.gz",
-                "checksum": "MD5:0xA8B80C2805B339EF5A219AF4573582D3",
+                "checksum": "MD5:A8B80C2805B339EF5A219AF4573582D3",
                 "size": "109135672"
               },
               {
                 "host": "x86_64-pc-linux-gnu",
                 "url": "https://github.com/VSChina/azureiotdevkit_tools/releases/download/1.0/gcc-arm-none-eabi-6-2017-q1-linux64.tar.gz",
                 "archiveFileName": "gcc-arm-none-eabi-6-2017-q1-linux64.tar.gz",
-                "checksum": "MD5:0x4B5749E0248889B9A3B00852C1837A92",
+                "checksum": "MD5:4B5749E0248889B9A3B00852C1837A92",
                 "size": "112772785"
               },
               {
                 "host": "i686-pc-linux-gnu",
                 "url": "https://github.com/VSChina/azureiotdevkit_tools/releases/download/1.0/gcc-arm-none-eabi-5_4-2016q3-linux32.tar.gz",
                 "archiveFileName": "gcc-arm-none-eabi-5_4-2016q3-linux32.tar.gz",
-                "checksum": "MD5:0xE54D81242669409234909154169AD3F9",
+                "checksum": "MD5:E54D81242669409234909154169AD3F9",
                 "size": "106442419"
               }
             ]
@@ -83,28 +83,28 @@
                 "host": "i686-linux-gnu",
                 "url": "https://github.com/VSChina/azureiotdevkit_tools/releases/download/1.0/openocd-linux32-0.10.0.tar",
                 "archiveFileName": "openocd-linux32-0.10.0.tar",
-                "checksum": "MD5:0xC91BE51AE5D63091B1CC23B557E16535",
+                "checksum": "MD5:C91BE51AE5D63091B1CC23B557E16535",
                 "size": "27729920"
               },
               {
                 "host": "x86_64-pc-linux-gnu",
                 "url": "https://github.com/VSChina/azureiotdevkit_tools/releases/download/1.0/openocd-linux64-0.10.0.tar",
                 "archiveFileName": "openocd-linux64-0.10.0.tar",
-                "checksum": "MD5:0xC91BE51AE5D63091B1CC23B557E16535",
+                "checksum": "MD5:C91BE51AE5D63091B1CC23B557E16535",
                 "size": "27729920"
               },
               {
                 "host": "i686-mingw32",
                 "url": "https://github.com/VSChina/azureiotdevkit_tools/releases/download/1.0/openocd-0.10.0-32.zip",
                 "archiveFileName": "openocd-0.10.0-32.zip",
-                "checksum": "MD5:0x83E1ED6C7D7558F09C1E39F9C168126C",
+                "checksum": "MD5:83E1ED6C7D7558F09C1E39F9C168126C",
                 "size": "2751074"
               },
               {
                 "host": "i386-apple-darwin11",
                 "url": "https://github.com/VSChina/azureiotdevkit_tools/releases/download/1.0/openocd-0.10.0.tar.gz",
                 "archiveFileName": "openocd-0.10.0.tar.gz",
-                "checksum": "MD5:0x8971D16AEE5C2642B33EE55FC6C86239",
+                "checksum": "MD5:8971D16AEE5C2642B33EE55FC6C86239",
                 "size": "6124274"
               }
             ]
