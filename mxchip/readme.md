@@ -16,6 +16,10 @@ Follow the [tutorial](https://docs.microsoft.com/azure/iot-develop/quickstart-de
 
 When the MxChip was first released, working with it was a combination of a Visual Studio Code plugin plus the Arduino IDE.  That has since been retired.  However, you can still use the Arduino IDE to work with the board.  The legacy documentation can still be found [online](https://microsoft.github.io/azure-iot-developer-kit/docs/get-started/).
 
+* The GitHub repo for source and release for the Arduino plugin as well as the compiled MxChip firmware can be found [here](https://github.com/microsoft/devkit-sdk).
+* The GitHub repo for the Arduino board definition file and supporting tools libraries can be found [here](https://github.com/VSChina/azureiotdevkit_tools).
+* The original Getting Started sample can be found [here](https://github.com/Azure-Samples/mxchip-iot-devkit-get-started).
+
 The following steps are needed to get started.
 
 1. ### Install ST-Link drivers
