@@ -12,6 +12,12 @@ There are a few options to explore with the MXChip.
 
 Follow the [tutorial](https://docs.microsoft.com/azure/iot-develop/quickstart-devkit-mxchip-az3166) to get things going quickly.
 
+### PlatformIO
+
+PlatformIO is a cross-platform build system for embedded systems.  It's very popular and supports a wide range of platforms, including the MxChip.  The documentation for the MxChip can be found [here](https://docs.platformio.org/en/latest/boards/ststm32/az3166.html).
+
+* The GitHub repo for the PlatformIO board definition file and supporting tools libraries can be found [here](https://github.com/platformio/platform-ststm32/blob/develop/boards/mxchip_az3166.json).
+
 ### Arduino
 
 When the MxChip was first released, working with it was a combination of a Visual Studio Code plugin plus the Arduino IDE.  That has since been retired.  However, you can still use the Arduino IDE to work with the board.  The legacy documentation can still be found [online](https://microsoft.github.io/azure-iot-developer-kit/docs/get-started/).
