@@ -42,6 +42,11 @@ Azure Sphere
 Azure IoT Edge
 .Net 6
 
+## [Azure Vision AI Dev Kit](/VisionAIDevKit/readme.md)
+
+Azure IoT Edge
+Vision on Edge
+
 ## [Azure Percept DK](/Percept/readme.md)
 
 Azure IoT Edge
