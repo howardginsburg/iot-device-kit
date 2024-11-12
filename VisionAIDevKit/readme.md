@@ -6,10 +6,16 @@ The [Vision AI DevKit](https://azure.github.io/Vision-AI-DevKit-Pages/) is meant
 
 ## Factory Reset
 
+### Option 1
+
 1. If you've gone through the setup process in the past, you can initiate a full reset by ssh into the camera and running the following command:
 `sudo su`
 `mv /etc/iotedge/config.yaml /etc/iotedge/config.yaml.bak`
 1. Then hold the power button in for 12 seconds until the lights turn off.  When it reboots, the lights will blink red, all docker images will be erased, and the device will be ready for setup.
+
+### Option 2
+
+1. Follow the instructions to do a [firmware update](https://azure.github.io/Vision-AI-DevKit-Pages/docs/Firmware/).
 
 ## Setup
 
@@ -18,15 +24,15 @@ The [Vision AI DevKit](https://azure.github.io/Vision-AI-DevKit-Pages/) is meant
 1. Run the following commands to copy Dockerfile and rtspenabler.py to the device and build the docker container locally.  Alternatively, you could publish them to a docker repo and pull them down.
     - `sudo su`
     - `mkdir /etc/rtspenabler`
-    - `cd rtspenabler`
-    - `vi <file name>`
+    - `cd /etc/rtspenabler`
+    - `vi <filename>`
     - `press 'i' to enter insert mode`
     - `press Ctrl+v`
     - `press Esc`
     - `press ':'`
     - `press 'wq'`
     - `docker build -t rtspenabler .`
-    - `docker run -d --net=host --restart unless-stopped --name rtspenabler rtspenabler`
+    - `docker run -d --net=host --restart unless-stopped --log-opt max-size=1m --log-opt max-file=3 --log-driver=json-file --name rtspenabler rtspenabler`
     - `docker logs rtspenabler`
 1. Open an RTSP client and connect to `rtsp://<ip address>:8900`
 
