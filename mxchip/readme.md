@@ -8,13 +8,13 @@ The [MxChip](https://microsoft.github.io/azure-iot-developer-kit/) contains an S
 
 There are a few options to explore with the MXChip.
 
-### Azure RTOS
+### Eclipse ThreadX (formerly Azure RTOS()
 
-Follow the [tutorial](https://docs.microsoft.com/azure/iot-develop/quickstart-devkit-mxchip-az3166) to get things going quickly.
+Follow the [tutorial](https://learn.microsoft.com/azure/iot/tutorial-devkit-mxchip-az3166-iot-hub) to get things going quickly.
 
 ### PlatformIO
 
-PlatformIO is a cross-platform build system for embedded systems.  It's very popular and supports a wide range of platforms, including the MxChip.  The documentation for the MxChip can be found [here](https://docs.platformio.org/en/latest/boards/ststm32/az3166.html).
+PlatformIO is a cross-platform build system for embedded systems.  It's very popular and supports a wide range of platforms, including the MxChip.  The documentation for the MxChip can be found [here](https://docs.platformio.org/en/latest/boards/ststm32/mxchip_az3166.html).
 
 * The GitHub repo for the PlatformIO board definition file and supporting tools libraries can be found [here](https://github.com/platformio/platform-ststm32/blob/develop/boards/mxchip_az3166.json).
 
@@ -70,4 +70,4 @@ Note: Do not use the IoT Hub SDK that's provided with the board packaging.  Inst
 
 - If you're looking for RTOS solutions, Azure RTOS is a fantastic choice.  As you explore the code, you'll very quickly see that the different components of the framework integrate together very nicely.
 - The threading model is shown off by being able to work the buttons and not have to interrupt telemetry being sent.
-- You unfortunately have to hardcode the connection information into the code.  It would be great to see this evolve into something similar to have the Wio Terminal sample does this.
+- You unfortunately have to hardcode the connection information into the code.
