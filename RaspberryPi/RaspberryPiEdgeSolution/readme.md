@@ -2,8 +2,8 @@
 
 This Iot Edge Solution leverages a Sense Hat on a Raspberry Pi to send data to IoT Hub/Central.  There are a few things to explore with this sample:
 
-1. DotNet 6
-   - The project and subsequent docker container have been upgraded from netcoreapp3.1 to net6.0 to take advantage of all the latest features of .Net.
+1. DotNet 9
+   - The project and subsequent docker container uses DotNet 9.0 to take advantage of all the latest features of .Net.
 2. Docker
    - The docker file builds against the AMD64 so I can build on my laptop.  Then it switches over to the AMR32 runtime container.
    - The "runuser" section of the docker file is commented out so it can run as root and access the sensehat.
@@ -18,7 +18,7 @@ Note: make sure to enable I2C on your Raspberry Pi so that the SenseHat can be a
 
 ### IoT Edge install on Raspberry Pi Bullseye
 
-Follow the [documentation/tutorials](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-provision-single-device-linux-symmetric?view=iotedge-1.4&tabs=azure-portal%2Cdebian) on how to deploy to a Raspberry Pi.  
+Follow the [documentation/tutorials](https://learn.microsoft.com/en-us/azure/iot-edge/how-to-provision-single-device-linux-symmetric?view=iotedge-1.4&tabs=azure-portal%2Cdebian#install-iot-edge) on how to deploy to a Raspberry Pi.  
 
 ### Deploying to IoT Central
 
