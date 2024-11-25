@@ -101,7 +101,7 @@ namespace SenseHatModule
                 await ioTHubModuleClient.SendEventAsync("senseHatOutput", eventMessage);
                 
 
-                await Task.Delay(1000, cts.Token);
+                await Task.Delay(10000, cts.Token);
             }
 
             senseHat.Fill();
