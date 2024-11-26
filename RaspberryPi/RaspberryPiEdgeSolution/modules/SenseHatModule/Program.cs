@@ -22,8 +22,6 @@ namespace SenseHatModule
         public static ModuleClient ioTHubModuleClient;
         public static SenseHat senseHat;
 
-        public static int xPixel = 0, yPixel = 0;
-
         public static void Main(string[] args)
         {
             senseHat = new SenseHat();
@@ -69,28 +67,22 @@ namespace SenseHatModule
         static async Task SendEvents(CancellationTokenSource cts)
         {
             var defaultSeaLevelPressure = WeatherHelper.MeanSeaLevel;
-
+            Random random = new Random();
             while (!cts.Token.IsCancellationRequested)
             {
                 //Clear the sensehat leds.
                 senseHat.Fill();
-                //Set the next pixel to green.
-                senseHat.SetPixel(xPixel,yPixel,Color.Green);
 
-                //Increment the pixel positions for the next time.
-                xPixel++;
-                if (xPixel == 8) //We're at the end of the X axis.
-                {
-                    xPixel = 0; //Reset the X position to 0.
-                    yPixel++; //Increment the y position.
-                    if (yPixel == 8) //We're at the bottom of the Y axis.
-                    {
-                        yPixel = 0;
-                    }
-                }
+                //Pick random coordinates for a single pixel and a random color to set it to.
+                int xPixel = random.Next(0, 8);
+                int yPixel = random.Next(0, 8);
+                Color randomColor = Color.FromArgb(random.Next(0, 255), random.Next(0, 255), random.Next(0, 255));
+                senseHat.SetPixel(xPixel,yPixel,randomColor);
 
                 var message = new MessageBody(senseHat);
+
                 
+
                 string dataBuffer = JsonConvert.SerializeObject(message);
                 var eventMessage = new Message(Encoding.UTF8.GetBytes(dataBuffer));
                 eventMessage.ContentEncoding = "utf-8";
