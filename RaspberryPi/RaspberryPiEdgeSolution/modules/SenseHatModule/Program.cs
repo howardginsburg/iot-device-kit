@@ -76,8 +76,7 @@ namespace SenseHatModule
                 //Pick random coordinates for a single pixel and a random color to set it to.
                 int xPixel = random.Next(0, 8);
                 int yPixel = random.Next(0, 8);
-                Color randomColor = Color.FromArgb(random.Next(0, 255), random.Next(0, 255), random.Next(0, 255));
-                senseHat.SetPixel(xPixel,yPixel,randomColor);
+                senseHat.SetPixel(xPixel,yPixel,Color.Green);
 
                 var message = new MessageBody(senseHat);
 
