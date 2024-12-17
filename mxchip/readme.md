@@ -8,7 +8,7 @@ The [MxChip](https://microsoft.github.io/azure-iot-developer-kit/) contains an S
 
 There are a few options to explore with the MXChip.
 
-### Eclipse ThreadX (formerly Azure RTOS()
+### Eclipse ThreadX (formerly Azure RTOS())
 
 Follow the [tutorial](https://learn.microsoft.com/azure/iot/tutorial-devkit-mxchip-az3166-iot-hub) to get things going quickly.
 
@@ -25,6 +25,7 @@ When the MxChip was first released, working with it was a combination of a Visua
 * The GitHub repo for source and release for the Arduino plugin as well as the compiled MxChip firmware can be found [here](https://github.com/microsoft/devkit-sdk).
 * The GitHub repo for the Arduino board definition file and supporting tools libraries can be found [here](https://github.com/VSChina/azureiotdevkit_tools).
 * The original Getting Started sample can be found [here](https://github.com/Azure-Samples/mxchip-iot-devkit-get-started).
+    * Note: I took the original getting started sample and updated it to work with PlatformIO and the latest Azure certs.  You can find it at [here](https://github.com/howardginsburg/mxchip-iot-devkit-get-started-g2).
 
 The following steps are needed to get started.
 

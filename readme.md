@@ -40,7 +40,7 @@ Azure Sphere
 ## [Raspberry Pi w/SenseHat](/RaspberryPi/readme.md)
 
 Azure IoT Edge
-.Net 6
+.Net 9
 
 ## [Azure Vision AI Dev Kit](/VisionAIDevKit/readme.md)
 
